@@ -3,24 +3,46 @@
 @tailwind utilities;
 
 @layer base {
-    h1,h2,h3,h4 {
+
+    h1,
+    h2,
+    h3,
+    h4 {
         @apply font-bold;
     }
-    
+
     h1 {
         @apply text-4xl;
     }
+
     h2 {
         @apply text-3xl;
     }
+
     h3 {
         @apply text-2xl;
     }
+
     h4 {
         @apply text-xl;
     }
+
     p {
         @apply text-sm text-default-text;
+    }
+
+    form {
+        @apply p-4 rounded-xl;
+    }
+
+    label {
+        @apply mt-4;
+    }
+
+    input,
+    select,
+    textarea {
+        @apply p-1 m-1 rounded bg-card;
     }
 }
 
